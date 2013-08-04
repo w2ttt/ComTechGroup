@@ -1,0 +1,73 @@
+body {
+	background-color:#FFF8DC;
+	font-family: sans-serif
+}
+table {
+	border-collapse: collapse;
+}
+
+th{
+	padding: 5px;
+	text-align: left;
+	font-weight: 400;
+}
+
+/* First Row */
+tr:first-child{
+	background-color: #ACD1E9;
+}
+
+/* Every even row */
+tr:nth-child(even){
+	background-color: #E0F0F0;
+}
+
+/* Every other row, starting with 3 */
+tr:nth-child(2n+3){
+	background-color: #E0F0F0;
+}
+
+/* Hover attribute for all rows beyond the first */
+tr:not(:first-child):hover{
+	background-color: #A0A0FF;
+}
+
+form{
+	/* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(right bottom, circle farthest-corner, #CCCCCC 0%, #FFFFFF 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(right bottom, circle farthest-corner, #CCCCCC 0%, #FFFFFF 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(right bottom, circle farthest-corner, #CCCCCC 0%, #FFFFFF 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 895, color-stop(0, #CCCCCC), color-stop(1, #FFFFFF));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(right bottom, circle farthest-corner, #CCCCCC 0%, #FFFFFF 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-corner at right bottom, #CCCCCC 0%, #FFFFFF 100%);
+	align: left
+	margin:auto;
+	position:relative;
+	width:35em;
+	height:auto;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
